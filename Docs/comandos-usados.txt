@@ -1,0 +1,11 @@
+# Para crear el proyecto
+dotnet new mvc -o TrendsNews -f net6.0
+# Para ejecutar el proyecto
+cd TrendsNews
+dotnet run --urls=https://localhost:5001/
+
+# Para crear la solución de Visual Studio (este proyecto considera uso de Visual Studio)
+dotnet new sln --name TrendsNewsSolution
+
+# Vincular el proyecto WebApp a WebAppSolution
+dotnet sln add .\TrendsNews.csproj

@@ -1,0 +1,25 @@
+@model List<New>
+
+
+<div>
+    <strong>News</strong>
+    
+    @if (Model == null || Model.Count == 0)
+    {
+        <p>No news to display</p>
+    }
+    else
+    {
+        @foreach (var noticia in Model)
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">@noticia.Title</h5>
+                    <p class="card-text">@noticia.Description</p>
+                    <a href="@noticia.Link" target="_blank" class="card-link">Leer más</a>
+                    <p class="card-text"><small class="text-muted">@noticia.PubDate</small></p>
+                </div>
+            </div>
+        }
+    }
+</div>
