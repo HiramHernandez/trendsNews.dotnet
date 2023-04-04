@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net6.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/3a4fecb3-40e0-406c-b29a-167e40d785ae/resourceGroups/trends_new_dotnet/providers/Microsoft.Web/sites/trends-new-dotnet"
+}
